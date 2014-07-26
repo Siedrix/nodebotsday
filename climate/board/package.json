@@ -1,0 +1,7 @@
+{
+  "name": "climate-example",
+  "version": "0.0.0",
+  "dependencies": {
+    "climate-si7005": "~0.1.3"
+  }
+}

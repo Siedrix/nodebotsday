@@ -1,0 +1,7 @@
+{
+  "name": "picture",
+  "version": "0.0.1",
+  "dependencies": {
+    "camera-vc0706": "~0.1.6"
+  }
+}

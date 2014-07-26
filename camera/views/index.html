@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>Camera stream</title>
+</head>
+<body>
+	<h1>Camera stream</h1>
+	<img id="camera" src="">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript">
+	var socket = io('http://localhost');
+
+	socket.on('image', function (data) {
+		console.log(data);
+
+		$('#camera').attr('src', data.image);
+	});
+	</script>
+</body>
+</html>
